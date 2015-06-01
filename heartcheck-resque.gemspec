@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-nav', '~> 0.2.0', '>= 0.2.4'
 
   spec.add_dependency 'heartcheck', '~> 1.0.0', '>= 1.0.0'
-  spec.add_dependency 'resque', '~> 1.24.0'
+  spec.add_dependency 'resque', '~> 1.0'
 end
