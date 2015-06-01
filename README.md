@@ -1,6 +1,8 @@
 # Heartcheck::Resque
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/locaweb/heartcheck-resque.svg)](https://travis-ci.org/locaweb/heartcheck-resque)
+
+A plugin to check resque connection with heartcheck
 
 ## Installation
 
@@ -20,11 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can add a check to resque when configure the heartcheck
+
+```ruby
+Heartcheck.setup do |config|
+  config.add :resque do |c|
+    c.name = 'redis'
+  end
+end
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/heartcheck-resque/fork )
+1. Fork it ( https://github.com/locaweb/heartcheck-resque/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
