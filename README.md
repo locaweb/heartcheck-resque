@@ -27,7 +27,7 @@ You can add a check to resque when configure the heartcheck
 ```ruby
 Heartcheck.setup do |config|
   config.add :resque do |c|
-    c.name = 'redis'
+    c.add_service(failures_limit: 0)
   end
 end
 ```
