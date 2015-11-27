@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Heartcheck::Checks::Resque do
   let(:opts) { { failures_limit: 0 } }
   subject    { described_class.new.tap { |c| c.add_service(opts) } }
