@@ -8,7 +8,7 @@ describe Heartcheck::Checks::Resque do
 
     let(:errors) { -> { check.instance_variable_get(:@errors) } }
 
-    context 'with errors' do
+    context 'with any error on Resque\'s failed jobs' do
       before { allow(Resque::Failure).to receive(:count).and_return(2) }
 
       it 'sets @error' do
@@ -23,6 +23,19 @@ describe Heartcheck::Checks::Resque do
 
       it 'has no errors' do
         expect { validate! }.to_not change(&errors).from([])
+      end
+    end
+
+
+    context 'with an unexpected error' do
+      before do
+        allow(Resque::Failure).to receive(:count).and_raise('AnError')
+      end
+
+      it do
+        expect { validate! }.to change(&errors)
+          .from([])
+          .to(['Resque failed! AnError'])
       end
     end
   end
