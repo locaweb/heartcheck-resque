@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+gem install bundler -v 1.10.6 --conservative
+bundle install -j 4 --retry 3

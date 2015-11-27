@@ -9,7 +9,7 @@ A plugin to check resque connection with heartcheck
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'heartcheck-resque'
+gem 'heartcheck/resque'
 ```
 
 And then execute:
@@ -31,6 +31,26 @@ Heartcheck.setup do |config|
   end
 end
 ```
+
+## Development
+
+You need to setup your environment by running the following command:
+
+    $ bun/setup
+
+### Test suite
+
+The project uses `RSpec` as the test framework.
+
+To run the specs, you can execute the following command:
+
+    $ bin/rspec
+
+### Console
+
+If you want to open a console to make any kind of debugging you should run:
+
+    $ bin/console
 
 ## Contributing
 
