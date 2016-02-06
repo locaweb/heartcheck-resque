@@ -1,8 +1,9 @@
 # Heartcheck::Resque
 
 [![Build Status](https://travis-ci.org/locaweb/heartcheck-resque.svg)](https://travis-ci.org/locaweb/heartcheck-resque)
+[![Code Climate](https://codeclimate.com/github/locaweb/heartcheck-resque/badges/gpa.svg)](https://codeclimate.com/github/locaweb/heartcheck-resque)
 
-A plugin to check resque connection with heartcheck
+##A plugin to check resque connection with [heartcheck](https://github.com/locaweb/heartcheck).
 
 ## Installation
 
@@ -22,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-You can add a check to resque when configure the heartcheck
+You can check any resque connection that there's in your app.
 
 ```ruby
 Heartcheck.setup do |config|
@@ -32,25 +33,10 @@ Heartcheck.setup do |config|
 end
 ```
 
-## Development
+### Check Heartcheck example [here](https://github.com/locaweb/heartcheck/blob/master/lib/heartcheck/generators/templates/config.rb)
 
-You need to setup your environment by running the following command:
-
-    $ bun/setup
-
-### Test suite
-
-The project uses `RSpec` as the test framework.
-
-To run the specs, you can execute the following command:
-
-    $ bin/rspec
-
-### Console
-
-If you want to open a console to make any kind of debugging you should run:
-
-    $ bin/console
+## License
+* [MIT License](https://github.com/locaweb/heartcheck-resque/blob/master/LICENSE.txt)
 
 ## Contributing
 
