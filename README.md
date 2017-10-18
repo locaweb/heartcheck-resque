@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/locaweb/heartcheck-resque.svg)](https://travis-ci.org/locaweb/heartcheck-resque)
 [![Code Climate](https://codeclimate.com/github/locaweb/heartcheck-resque/badges/gpa.svg)](https://codeclimate.com/github/locaweb/heartcheck-resque)
 
-##A plugin to check resque connection with [heartcheck](https://github.com/locaweb/heartcheck).
+##A plugin to check resque connection and error amount with [heartcheck](https://github.com/locaweb/heartcheck).
 
 ## Installation
 
@@ -28,7 +28,7 @@ You can check any resque connection that there's in your app.
 ```ruby
 Heartcheck.setup do |config|
   config.add :resque do |c|
-    c.add_service(failures_limit: 0)
+    c.add_service(failures_limit: 10)
   end
 end
 ```
