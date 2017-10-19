@@ -23,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.27.0', '>= 0.27.1'
   spec.add_development_dependency 'pry-nav', '~> 0.2.0', '>= 0.2.4'
 
-  spec.add_dependency 'heartcheck', '~> 1.0.0', '>= 1.0.0'
+  spec.add_dependency 'heartcheck', '~> 1.0', '>= 1.0.0'
   spec.add_dependency 'resque', '~> 1.0'
 end
