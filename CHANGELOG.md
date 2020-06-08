@@ -6,11 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.0.3 - 2020-06-01]
-### Fixed
-Substitution of characters (slash by hyphen) in line that is inserted in Gemfile file
-
-## 0.0.2 - 2017-10-18
+## [0.0.2 - 2017-10-18]
 ### Added
 Allow usage with newer versions of heartcheck
 
@@ -19,4 +15,4 @@ Allow usage with newer versions of heartcheck
 Create gem
 
 [Unreleased]: https://github.com/locaweb/heartcheck-resque/compare/master....HEAD
-[0.0.3 - 2020-06-01]: https://github.com/locaweb/heartcheck-resque/releases/tag/v0.0.3
+[0.0.2 - 2017-10-18]: https://github.com/locaweb/heartcheck-resque/releases/tag/v0.0.2
