@@ -10,7 +10,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'heartcheck/resque'
+gem 'heartcheck-resque'
 ```
 
 And then execute:
