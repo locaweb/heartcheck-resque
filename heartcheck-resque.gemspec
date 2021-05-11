@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'heartcheck/resque/version'
@@ -19,9 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(/^(test|spec|features)/)
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rspec', '~> 3.4.0'
-  spec.add_development_dependency 'rubocop', '~> 0.27.0', '>= 0.27.1'
   spec.add_development_dependency 'pry-nav', '~> 0.2.0', '>= 0.2.4'
+  spec.add_development_dependency 'rspec', '~> 3.4.0'
+  spec.add_development_dependency 'rubocop', '>= 0.49.0'
 
   spec.add_dependency 'heartcheck', '~> 1.0', '>= 1.0.0'
   spec.add_dependency 'resque', '~> 1.0'
