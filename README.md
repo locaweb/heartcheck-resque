@@ -33,15 +33,31 @@ Heartcheck.setup do |config|
 end
 ```
 
-### Check Heartcheck example [here](https://github.com/locaweb/heartcheck/blob/master/lib/heartcheck/generators/templates/config.rb)
+**Check Heartcheck example** [here](https://github.com/locaweb/heartcheck/blob/master/lib/heartcheck/generators/templates/config.rb)
 
-## License
-* [MIT License](https://github.com/locaweb/heartcheck-resque/blob/master/LICENSE.txt)
+## Development setup using Docker
+
+The Hearthcheck-Resque provides a container with the current stable version of Ruby released and a second Docker container running Redis. The development setup requires you to have these tools available in your local environment:
+
+-   [Docker](https://docs.docker.com/get-docker/)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
+-   [Bash](https://www.gnu.org/software/bash/)
+
+#### BootStrap Script to run the dockerized environment
+
+```bash
+./scripts/heartcheck-resque setup
+```
+
+Run the command `./scripts/heartcheck-cache -h` to see available options.
 
 ## Contributing
 
-1. Fork it ( https://github.com/locaweb/heartcheck-resque/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1.  [Fork it](https://github.com/locaweb/heartcheck-resque/fork)
+2.  Create your feature branch ( **git checkout -b my-new-feature** )
+3.  Commit your changes ( **git commit -am 'Add some feature'** )
+4.  Push to the branch ( **git push origin my-new-feature** )
+5.  Create a new Pull Request
+
+## License
+*   [MIT License](https://github.com/locaweb/heartcheck-resque/blob/master/LICENSE.txt)
